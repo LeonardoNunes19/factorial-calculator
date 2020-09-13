@@ -1,0 +1,38 @@
+#historyContainer {
+    width: 400px;
+    height: 500px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+table {
+    width: 100%;
+}
+
+table, td {
+    border-collapse: collapse;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+td, th {
+    font-size: 20px;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #c7ccdb;
+    font-weight: 500;
+}
+
+td {
+    font-weight: 200;
+}
+
+#numberCol {
+    width: 30%;
+}
+
+#factorialCol {
+    width: 70%;
+}
