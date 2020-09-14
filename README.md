@@ -15,6 +15,7 @@ Factorial Calculator é uma aplicação desenvolvida em Spring Boot e ReactJS qu
     `npm install`
     
 - Inicie o frontend da aplicação
+
     `npm start`
     
 Feito isso, será aberto o frontend da aplicação localmente, utilizando a porta 3000
