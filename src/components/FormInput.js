@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/FormInput.css'
 
 export default props => {
+
+    const [text, setText] = useState('')
+
+    const submitText = () => {
+        props.onSubmit(text)
+        setText('')
+    }
+
     return (
         <div className='formContainer'>
             <input 
@@ -9,11 +17,12 @@ export default props => {
                 type='text'
                 size={20}
                 placeholder='Digite um número inteiro'
-                onChange={(text) => props.onChangeText(text.target.value)}
+                onChange={(text) => setText(text.target.value)}
+                value={text}
             />
             <button
                 className='buttonSubmit'
-                onClick={() => props.onSubmit()}
+                onClick={() => submitText()}
             >Calcular</button>
         </div>
     )
