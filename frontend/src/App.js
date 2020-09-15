@@ -24,7 +24,7 @@ export default class App extends Component {
   handleSubmit = async (text) => {
     const number = Number(text)
     
-    if (this.isNatural(number) && text !== '') {
+    if (this.isNatural(number) && text.trim() !== '') {
       this.setState({invalidInput: false})
       
       const response = await APIService.postNumber(number)
