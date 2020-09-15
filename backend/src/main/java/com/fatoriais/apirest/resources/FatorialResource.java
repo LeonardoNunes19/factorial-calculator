@@ -24,7 +24,7 @@ public class FatorialResource {
 		int i = 1;
 		BigInteger fact = BigInteger.ONE;
 		
-		for(i= 1 ;i<=number;i++) {
+		for(i=1 ;i<=number;i++) {
 			fact = fact.multiply(BigInteger.valueOf(i));
 		}
 		factorial.setFactorial(fact);
