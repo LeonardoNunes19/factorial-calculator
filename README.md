@@ -9,10 +9,16 @@ Factorial Calculator é uma aplicação desenvolvida em Spring Boot e ReactJS qu
 - Docker v19 ou superior
 - Docker compose v1.27 ou superior
 
+Caso não tenha o docker instalado, [clique aqui](https://docs.docker.com/get-docker/) para obtê-lo. Você também precisará instalar o [docker compose](https://docs.docker.com/compose/install/).
+
 ## Instalação
 
-- Após fazer o download do arquivo, faça a extração
+- Faça a cópia do repositório com o comando abaixo ou faça o download e extração da pasta.
+
+    `git clone https://github.com/LeonardoNunes19/factorial-calculator-fullstack.git`
+
 - Certifique-se de que as portas 3000 e 8080 não estão sendo utilizadas na sua máquina
+
 - Dentro da pasta, execute o comando
 
     `docker-compose up`
@@ -39,4 +45,10 @@ Foi utilizado para oferecer uma interface amigável e trabalhar com tudo que nã
 
 ### Docker
 
-Docker é um conjunto de produtos que usa a virtualização do sistema operacional para distribuir em pacotes chamados containeres. Isto permite que o ambiente todo seja portável para qualquer outro host que tenha o Docker instalado.
+Docker é um conjunto de produtos que usa a virtualização do sistema operacional para distribuir em pacotes chamados containers. Isto permite que o ambiente todo seja portável para qualquer outro host que tenha o Docker instalado.
+
+## Contato
+
+Leonardo Vieira Nunes - leonardovnun@protonmail.com
+
+Link do repositório - https://github.com/LeonardoNunes19/factorial-calculator-fullstack
