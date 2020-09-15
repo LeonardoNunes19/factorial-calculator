@@ -21,9 +21,12 @@ Caso não tenha o docker instalado, [clique aqui](https://docs.docker.com/get-do
 
 - Dentro da pasta, execute o comando
 
-    `docker-compose up`
+```
+docker-compose build
+docker-compose up
+```
 
-Após realizada todas as instalações, acesse o seguinte endereço no seu navegador
+Após realizada todas as instalações, acesse o seguinte endereço no seu browser
 
 `http://localhost:3000`
 
