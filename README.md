@@ -22,7 +22,6 @@ Após realizada todas as instalações, acesse o seguinte endereço no seu naveg
 
 Pronto! a calculadora já está rodando em sua máquina!
 
----
 
 ## Principais tecnologias
 
