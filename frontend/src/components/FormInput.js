@@ -8,20 +8,24 @@ export default props => {
     const submitText = () => {
         props.onSubmit(text)
         setText('')
+
+        const input = document.getElementById('inputNumber')
+        input.focus()
     }
 
     return (
-        <div className='formContainer'>
+        <div id='formContainer'>
             <input 
-                className='inputNumber'
+                id='inputNumber'
                 type='text'
                 size={20}
-                placeholder='Digite um número inteiro'
+                placeholder='Digite um número natural'
                 onChange={(text) => setText(text.target.value)}
                 value={text}
+                onKeyPress={(event) => event.key === 'Enter' && submitText()}
             />
             <button
-                className='buttonSubmit'
+                id='submitButton'
                 onClick={() => submitText()}
             >Calcular</button>
         </div>

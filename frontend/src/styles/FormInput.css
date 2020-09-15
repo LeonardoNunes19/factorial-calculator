@@ -1,23 +1,19 @@
-.formContainer {
+#formContainer {
     display: flex;
     flex-direction: column;
 }
 
-.inputNumber {
+#inputNumber {
     size: 30px;
     font-weight: 300;
 }
 
-.buttonSubmit {
+#submitButton {
     margin-top: 15px;
    border-radius: 30px;
    color: #FFFFFF;
    font-size: 20px;
    font-weight: 300;
-   /* padding-top: 10px;
-   padding-bottom: 10px;
-   padding-right: 1px;
-   padding-left: 1px; */
    background-color: rgba(0, 0, 0, 0.1);
    border: solid #FFFFFF 1px;
    text-decoration: none;
@@ -26,7 +22,7 @@
    text-align: center;
 }
 
-.buttonSubmit:hover {
+#submitButton:hover {
    background-color: rgba(0, 0, 0, 0.3);
     border: solid #337FED 1px;
 }
