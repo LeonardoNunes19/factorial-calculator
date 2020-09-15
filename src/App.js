@@ -48,6 +48,7 @@ export default class App extends Component {
   render() {
     return (
       <div id='app'>
+        <h1>Factorial calculator</h1>
         <div id='container'>
           <div id='form'>
             <FormInput 

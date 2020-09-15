@@ -5,6 +5,7 @@
 
 .inputNumber {
     size: 30px;
+    font-weight: 300;
 }
 
 .buttonSubmit {
@@ -12,7 +13,7 @@
    border-radius: 30px;
    color: #FFFFFF;
    font-size: 20px;
-   font-weight: 100;
+   font-weight: 300;
    /* padding-top: 10px;
    padding-bottom: 10px;
    padding-right: 1px;
