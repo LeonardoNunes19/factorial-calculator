@@ -2,35 +2,29 @@
 
 Factorial Calculator é uma aplicação desenvolvida em Spring Boot e ReactJS que tem por objetivo receber um valor inteiro e retornar o seu fatorial.
 
-# Pré requisitos
+![Factorial calculator interface](images/client_interface.png)
 
-- Java 11
-- Node v10
+## Pré requisitos
 
-# Instalação
+- Docker v19 ou superior
+- Docker compose v1.27 ou superior
 
-- Após baixar este repositório, faça a extração.
-- Dentro da pasta, instale os pacotes necessários pelo terminal do seu sistema operacional
+## Instalação
 
-    `npm install`
-    
-- Inicie o frontend da aplicação
+- Após fazer o download do arquivo, faça a extração
+- Dentro da pasta, execute o comando
 
-    `npm start`
-    
-Feito isso, será aberto o frontend da aplicação localmente, utilizando a porta 3000
+    `docker-compose up`
 
-# Inicializar a API
+Após realizada todas as instalações, acesse o seguinte endereço no seu navegador
 
-Agora precisamos iniciar o backend da nossa aplicação, para isso, execute estes comandos na raíz da pasta
+`http://localhost:3000`
 
-`java -jar backend/target/apirest-0.0.1-SNAPSHOT.jar`
-
-Pronto! a aplicação já está pronta para ser utilizada!
+Pronto! a calculadora já está rodando em sua máquina!
 
 ---
 
-# Principais tecnologias
+## Principais tecnologias
 
 Tendo em vista as especificações do projeto, toda a etapa de cálculo do fatorial deve ser feita pelo backend da aplicação, além desta dever ser codificada em Java.
 
@@ -42,3 +36,7 @@ Foi utilizado para oferecer uma interface amigável e trabalhar com tudo que nã
 
 - Fazer a validação dos dados antes de ir para o backend da apliação
 - Renderizar uma lista com o histórico dos cálculos realizados
+
+### Docker
+
+Docker é um conjunto de produtos que usa a virtualização do sistema operacional para distribuir em pacotes chamados containeres. Isto permite que o ambiente todo seja portável para qualquer outro host que tenha o Docker instalado.
