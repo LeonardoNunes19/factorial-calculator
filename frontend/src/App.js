@@ -9,6 +9,7 @@ export default class App extends Component {
   state = {
     history: [],
     invalidInput: false,
+    bigFactorial: false,
   }
   
   isNatural = (n) => {
@@ -27,8 +28,16 @@ export default class App extends Component {
     if (this.isNatural(number) && text.trim() !== '') {
       this.setState({invalidInput: false})
       
-      const response = await APIService.postNumber(number)
-      
+      let response = ''
+
+      if (number <= 170) {
+        this.setState({bigFactorial: false})
+        response = await APIService.postNumber(number)
+      } else {
+        this.setState({bigFactorial: true})
+        return
+      }
+
       this.addResponseToHistory(response)
       
       this.scrollToEnd('divToScroll')
@@ -43,7 +52,13 @@ export default class App extends Component {
     lastNumber.scrollIntoView(true)
   }
   
-  showWarning = () => 'Entrada inválida!'
+  showWarning = () => {
+    if (this.state.invalidInput) {
+      return 'Entrada inválida'
+    } else if (this.state.bigFactorial) {
+      return 'O fatorial é muito grande'
+    }
+  }
 
   render() {
     return (
@@ -55,7 +70,7 @@ export default class App extends Component {
               onSubmit={this.handleSubmit}
             />
             <div id='informationToClient'>
-              <p> {this.state.invalidInput && this.showWarning()} </p>
+              <p> {this.showWarning()} </p>
             </div>
           </div>
           <div id='history'>
