@@ -2,7 +2,7 @@
 
 Factorial Calculator é uma aplicação desenvolvida em Spring Boot e ReactJS que tem por objetivo receber um valor inteiro e retornar o seu fatorial.
 
-![Factorial calculator interface](images/demonstration.gif)
+![Factorial calculator interface](images/client_interface.png)
 
 ## Pré requisitos
 
