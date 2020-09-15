@@ -11,8 +11,8 @@ export default class App extends Component {
     invalidInput: false,
   }
   
-  isInteger = (n) => {
-    return typeof(n) === "number" && n % 1 === 0
+  isNatural = (n) => {
+    return typeof(n) === "number" && n % 1 === 0 && Number(n) >= 0
   }
   
   addResponseToHistory = (response) => {
@@ -24,7 +24,7 @@ export default class App extends Component {
   handleSubmit = async (text) => {
     const number = Number(text)
     
-    if (this.isInteger(number) && text !== '') {
+    if (this.isNatural(number) && text !== '') {
       this.setState({invalidInput: false})
       
       const response = await APIService.postNumber(number)
